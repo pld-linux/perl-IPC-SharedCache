@@ -1,4 +1,3 @@
-# $Revision: 1.1 $
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IPC
 %define	pnam	SharedCache
