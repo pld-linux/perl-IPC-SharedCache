@@ -9,7 +9,7 @@ Summary:	IPC::SharedCache - manage a cache in SysV IPC shared memory
 Summary(pl):	IPC::SharedCache - zarz±dzanie pamiêci± podrêczn± w pamiêci dzielonej SysV
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.3
-Release:	4
+Release:	5
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
