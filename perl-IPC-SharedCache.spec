@@ -10,7 +10,7 @@ Summary(pl):	IPC::SharedCache - zarz±dzanie pamiêci± podrêczn± w pamiêci dzielon
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.3
 Release:	4
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4d5d159a6b41d42918b7c1fceafb43ae
