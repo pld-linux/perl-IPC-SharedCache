@@ -5,13 +5,17 @@ Summary:	%{pdir}::%{pnam} perl module
 Summary(pl):	Modu³ perla %{pdir}::%{pnam}
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	4d5d159a6b41d42918b7c1fceafb43ae
+BuildRequires:	perl-devel >= 5.005
+BuildRequires:	perl(Carp)
+BuildRequires:	perl(IPC::ShareLite) >= 0.06
+BuildRequires:	perl(IPC::SysV)
+BuildRequires:	perl(Storable)
 BuildRequires:	rpm-perlprov >= 4.0.2-104
-BuildRequires:	perl >= 5.005
-BuildRequires:	perl(IPC::ShareLite) >= 0.06 perl(Storable) perl(Carp) perl(IPC::SysV)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,7 +37,8 @@ dowi±zany hash.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
