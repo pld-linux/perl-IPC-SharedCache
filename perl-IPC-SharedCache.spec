@@ -2,10 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-# XXX: hack for ac-i386 (tests don't work on Mosix kernel)
-%ifarch i386
-%undefine	with_tests
-%endif
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IPC
 %define	pnam	SharedCache
