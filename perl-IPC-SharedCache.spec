@@ -11,7 +11,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4d5d159a6b41d42918b7c1fceafb43ae
 BuildRequires:	perl-devel >= 5.005
-BuildRequires:	perl-Carp
+BuildRequires:	perl-Carp-Assert
 BuildRequires:	perl-IPC-ShareLite >= 0.06
 BuildRequires:	perl-IPC-SysV
 BuildRequires:	perl-Storable
