@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	IPC
-%define	pnam	SharedCache
+%define		pdir	IPC
+%define		pnam	SharedCache
 Summary:	IPC::SharedCache - manage a cache in SysV IPC shared memory
 Summary(pl):	IPC::SharedCache - zarz±dzanie pamiêci± podrêczn± w pamiêci dzielonej SysV
 Name:		perl-IPC-SharedCache
