@@ -6,7 +6,7 @@
 %define		pdir	IPC
 %define		pnam	SharedCache
 Summary:	IPC::SharedCache - manage a cache in SysV IPC shared memory
-Summary(pl):	IPC::SharedCache - zarz±dzanie pamiêci± podrêczn± w pamiêci dzielonej SysV
+Summary(pl.UTF-8):   IPC::SharedCache - zarzÄ…dzanie pamiÄ™ciÄ… podrÄ™cznÄ… w pamiÄ™ci dzielonej SysV
 Name:		perl-IPC-SharedCache
 Version:	1.3
 Release:	6
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module provides a shared memory cache accessed as a tied hash.
 
-%description -l pl
-Ten modu³ udostêpnia cache pamiêci dzielonej, dostêpny jako
-dowi±zany hash.
+%description -l pl.UTF-8
+Ten moduÅ‚ udostÄ™pnia cache pamiÄ™ci dzielonej, dostÄ™pny jako
+dowiÄ…zany hash.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
