@@ -9,11 +9,12 @@ Summary:	IPC::SharedCache - manage a cache in SysV IPC shared memory
 Summary(pl.UTF-8):	IPC::SharedCache - zarządzanie pamięcią podręczną w pamięci dzielonej SysV
 Name:		perl-IPC-SharedCache
 Version:	1.3
-Release:	7
+Release:	8
 License:	GPL v2+
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/IPC/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4d5d159a6b41d42918b7c1fceafb43ae
+Patch0:		%{name}-wrap-IPC-ShareLite-new-calls-inside-eval-block.patch
 URL:		http://search.cpan.org/dist/IPC-SharedCache/
 BuildRequires:	perl-Carp-Assert
 BuildRequires:	perl-IPC-ShareLite >= 0.06
@@ -32,6 +33,7 @@ hash.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
@@ -53,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes ANNOUNCE
 %{perl_vendorlib}/IPC/SharedCache.pm
-%{_mandir}/man3/*.3pm*
+%{_mandir}/man3/IPC::SharedCache.3pm*
